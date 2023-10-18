@@ -1,0 +1,8 @@
+# 忽略 masks 和 resultImage 文件夹中的所有图片
+masks/*
+resultImage/*
+!masks/.gitkeep
+!resultImage/.gitkeep
+
+# 忽略所有.png文件
+*.png
