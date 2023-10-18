@@ -42,7 +42,7 @@ app.post('/generateImagebySD', async (req, res) => {
     // }
 
     try {
-        const response = await fetch('http://202.120.189.177:8030/sdapi/v1/img2img', {
+        const response = await fetch('http://xxx.xxx.xxx.xxx:xxxx/sdapi/v1/img2img', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
