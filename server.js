@@ -42,7 +42,7 @@ app.post('/generateImagebySD', async (req, res) => {
     // }
 
     try {
-        const response = await fetch('http://xxx.xxx.xxx.xxx:xxxx/sdapi/v1/img2img', {
+        const response = await fetch('http://202.120.189.177:8030/sdapi/v1/img2img', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -65,13 +65,13 @@ app.post('/generateImagebySD', async (req, res) => {
                 console.error(err);
                 res.json({ message: 'Failed to save image' });
             } else {
-                res.json({ message: 'Image saved successfully' });
+                res.json({ imageName: imageName, message: 'Image saved successfully' });
             }
         });
 
     } catch (error) {
         console.error('API调用错误:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        res.status(500).json({ imageName: "image5-1.png", message: 'Internal server error' });
     }
 });
 
