@@ -71,7 +71,7 @@ app.post('/generateImagebySD', async (req, res) => {
 
     } catch (error) {
         console.error('API调用错误:', error);
-        res.status(500).json({ imageName: "image5-1.png", message: 'Internal server error' });
+        res.status(500).json({ message: 'Internal server error' });
     }
 });
 
